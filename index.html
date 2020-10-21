@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Web demo video</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/styles.css">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	<script>
+	$(document).ready(function(){
+	  $(".cnt").mouseover(function(){
+		$(".cnt").css("transform", "rotate(20deg)");
+	  });
+	  $(".cnt").mouseout(function(){
+		$(".cnt").css("background-color", "lightgray");
+	  });
+	});
+	</script>
+</head>
+
+<body>
+	<!-- HEADER cua trang web-->
+	
+	<header>
+		<img src="img/videocutter.png" alt="Ảnh index">
+	</header>
+	
+	<!-- Thanh dieu huong navigation -->
+	<nav>
+		<ul>
+		  <li><a href="">Trang chủ</a></li>
+		  <li><a href="">Cắt video</a></li>
+		  <li><a href="">Ghép video</a></li>
+		  <li><a href="">Chỉnh sửa video</a></li>
+		  <li><a href="">Thay đổi định dạng video</a></li>
+		</ul>
+	</nav>
+	
+	<!-- Main page -->
+	<div class="container">
+		<!-- Trigger the modal with a button -->
+		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Chọn video</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+					  <button type="button" class="close" data-dismiss="modal">&times;</button>
+					  <h4 class="modal-title">Video Cutter</h4>
+					</div>
+					<div class="modal-body">
+						<label><b>Chọn video từ máy</b></label>
+						<input type="file" name="video" required>
+						<label><b>Chọn thao tác thực hiện với video</b></label>
+						<select id="cars">
+						  <option value="catv">Cắt video</option>
+						  <option value="ghepv">Ghép video</option>
+						  <option value="tocdov">Chỉnh tốc độ</option>
+						  <option value="xoayv">Xoay chiều video</option>
+						  <option value="dinhdangv">Đổi định dạng video</option>
+						</select>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Xác nhận</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Đóng	</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="index_blocks">
+		<div class="block vcutter">
+			<div class="cnt">
+				<div class="img">
+					<img src="img/images.png" alt="Cắt video" class="img_content">
+				</div>
+				<div class="h">Cắt video</div>
+				<div class="p">
+					This web app comes in handy when you need to cut a small video file. It does not require installation, and it works in your browser.
+				</div>
+			</div>
+		</div>
+		<div class="block vcutter">
+			<div class="cnt">
+				<div class="img">
+					<img src="img/crop.png" alt="Cắt video" class="img_content">
+				</div>
+				<div class="h">Crop video</div>
+				<div class="p">
+					Cropping allows you to frame the video to the desired area or change frame proportions.
+				</div>
+			</div>
+		</div>
+		<div class="block vcutter">
+			<div class="cnt">
+				<div class="img">
+					<img src="img/camera.png" alt="Cắt video" class="img_content">
+				</div>
+				<div class="h">Rotate video</div>
+				<div class="p">
+					You can rotate your video 90, 180 or 270 degrees. It can be useful when a portrait scene was shot in a landscape mode or vice versa.
+				</div>
+			</div>
+		</div>
+		<div class="block vcutter">
+			<div class="cnt">
+				<div class="img">
+					<img src="img/video.png" alt="Cắt video" class="img_content">
+				</div>
+				<div class="h">Any format you can think of</div>
+				<div class="p">
+					The app supports almost every video format out there. If your file fails to open, then it is probably damaged or it is too big.
+				</div>
+			</div>
+		</div>
+		<div class="block vcutter">
+			<div class="cnt">
+				<div class="img">
+					<img src="img/images.png" alt="Cắt video" class="img_content">
+				</div>
+				<div class="h">Video editing online</div>
+				<div class="p">
+					The app can cut video files right in your browser window. Files of up to 500 Mb are supported, and we are about to raise this limit.
+				</div>
+			</div>
+		</div>
+		<div class="block vcutter">
+			<div class="cnt">
+				<div class="img">
+					<img src="img/crop.png" alt="Cắt video" class="img_content">
+				</div>
+				<div class="h">Easy video trimming</div>
+				<div class="p">
+					After uploading your file, you can choose the quality and format of the output file. There are no complicated controls — every feature is just one or two clicks away.
+				</div>
+			</div>
+		</div>
+		<div class="block vcutter">
+			<div class="cnt">
+				<div class="img">
+					<img src="img/camera.png" alt="Cắt video" class="img_content">
+				</div>
+				<div class="h">Security guaranteed</div>
+				<div class="p">
+					Your files are automatically deleted from our servers a few hours after you are done working with them. Nobody has access to them except you.
+				</div>
+			</div>
+		</div>
+		<div class="block vcutter">
+			<div class="cnt">
+				<div class="img">
+					<img src="img/video.png" alt="Cắt video" class="img_content">
+				</div>
+				<div class="h">Free to use</div>
+				<div class="p">
+					Our application will always remain free. You don’t have to buy a license or pay for extra features or downloads.
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+	<!-- Script -->
+	<script>
+		
+	</script>
+</body>
+
+</html>
