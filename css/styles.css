@@ -1,6 +1,7 @@
+
 header{
 	color: white;
-	background-color:white;
+	background-color:pink;
 	text-align: center;
 	font-family: verdana;
 	font-size: 40px;
@@ -45,6 +46,7 @@ div {
 }
 
 
+
 body, td, th {
     font-family: "Open Sans",sans-serif;
     color: #333;
@@ -54,6 +56,9 @@ body, html {
     padding: 0;
     margin: 0;
     font-size: 14px;
+}
+body{
+	background-color: pink !important;
 }
 .index_blocks .block .cnt {
     text-align: center;
@@ -85,6 +90,58 @@ body, html {
 	border: 2px solid;
 	border-color: black;
 	border-radius: 12px;
+	background-color: white;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
 .form-popup {
   display: none;
